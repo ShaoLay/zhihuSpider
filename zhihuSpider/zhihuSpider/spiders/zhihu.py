@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-import scrapy
-
-
-class ZhihuSpider(scrapy.Spider):
-    name = 'zhihu'
-    allowed_domains = ['www.zhihu.com']
-    start_urls = ['http://www.zhihu.com/']
-
-    def parse(self, response):
-        pass
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.selector import Selector
+from scrapy.linkextractors import LinkExtractor
+from scrapy import Request, FormRequest
+# from zhihuSpider.items ZhihuItem
