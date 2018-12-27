@@ -9,10 +9,10 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'zhihu'
+BOT_NAME = 'zhihuSpider'
 
-SPIDER_MODULES = ['zhihu.spiders']
-NEWSPIDER_MODULE = 'zhihu.spiders'
+SPIDER_MODULES = ['zhihuSpider.spiders']
+NEWSPIDER_MODULE = 'zhihuSpider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -88,6 +88,3 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-
-DOWNLOAD_DELAY = 0.25   #设置下载间隔为250ms
